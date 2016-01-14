@@ -24,8 +24,8 @@
     <%= f.date_select :birthdate, start_year: 1945, end_year: DateTime.now.year %>
   </div>
   <div class="field">
-    <%= f.label :favorite_color_id %><br>
-    <%= f.text_field :favorite_color_id %>
+    <%= f.label :favorite_color_id, "Choose your favorite color" %><br>
+    <%= f.select :favorite_color_id, Color.all.collect { |c| [ c.name, c.id ] }, include_blank: false %>
   </div>
   <div class="field">
     <%= f.label :gender %><br>
