@@ -17,7 +17,11 @@
 
 <p>
   <strong>Favorite color:</strong>
-  <%= @person.favorite_color.name %>
+  <% if @person.favorite_color.nil? %>
+  it's a secret!
+  <% else %>
+    <%= @person.favorite_color.name %>
+  <% end %>
 </p>
 
 <p>
