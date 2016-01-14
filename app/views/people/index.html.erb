@@ -2,6 +2,10 @@
 
 <h1>This is the index page for people</h1>
 
+
+<%= link_to 'Create a New Person', new_person_path %>
+
+
 <br>
 <br>
 <h2> the below table is rendered using:</h2>
@@ -63,6 +67,11 @@
   </tbody>
 </table>
 
+<br>
+<br>
+<br>
 
+<h2> below is a picture of a goat-tree </h2>
 
-<%= link_to 'New Person', new_person_path %>
+<%= image_tag('goats/goat_tree.jpg') %>
+<%= asset_path('goats/goat_tree.jpg') %>
