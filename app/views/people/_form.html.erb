@@ -33,7 +33,10 @@
     <%= f.radio_button :gender, 'F', checked: true %>
     <%= f.label :gender, "Male" %>
     <%= f.radio_button :gender, "M"  %>
-    </div>
+  </div>
+  <div class="field">
+    <%= f.label :employed, "Are you employed?" %>
+    <%= f.check_box :employed %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -25,5 +25,10 @@
   <%= @person.gender %>
 </p>
 
+<p>
+  <strong>Employment Status:</strong>
+  <%= @person.employed ? 'Employed' : 'Unemployed' %>
+</p>
+
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
