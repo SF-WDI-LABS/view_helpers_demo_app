@@ -1,0 +1,12 @@
+<p>This page demos a few basic view helpers</p>
+
+<h2>behold the power of 'link_to'</h2>
+<div class='links'><ul>
+  <li><%= link_to "View all people", people_path, id: 'justbcuz' %></li>
+  <% unless @person.nil? %>
+    <li><%= link_to("View the #{@person.id.ordinalize} and final person in the database", @person) %></li>
+    <li><%= link_to("Edit the #{@person.id.ordinalize} person in the database", edit_person_path(@person)) %></li>
+  <% end %>
+  <li><%= link_to "View all products", products_path %></li>
+</ul>
+</div>
