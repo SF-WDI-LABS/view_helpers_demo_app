@@ -21,7 +21,9 @@
         <td><%= person.first_name %></td>
         <td><%= person.last_name %></td>
         <td><%= person.birthdate %></td>
-        <td><%= person.favorite_color %></td>
+        <td class='<%= person.favorite_color.name unless person.favorite_color.nil? %>'>
+          <%= person.favorite_color.name unless person.favorite_color.nil? %>
+        </td>
         <td><%= person.gender %></td>
         <td><%= person.employed ? 'Yes' : 'No' %></td>
         <td><%= link_to 'Show', person %></td>
