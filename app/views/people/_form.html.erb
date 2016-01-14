@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :birthdate %><br>
-    <%= f.date_select :birthdate %>
+    <%= f.date_select :birthdate, start_year: 1945, end_year: DateTime.now.year %>
   </div>
   <div class="field">
     <%= f.label :favorite_color_id %><br>
